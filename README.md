@@ -1,12 +1,16 @@
 # RunHidden
 
-[![image](https://user-images.githubusercontent.com/79026235/152910441-59ba653c-5607-4f59-90c0-bc2851bf2688.png)Download the zip file](https://github.com/LesFerch/RunHidden/releases/download/1.0.0/RunHidden.zip)
+[![image](https://user-images.githubusercontent.com/79026235/152910441-59ba653c-5607-4f59-90c0-bc2851bf2688.png)Download the zip file](https://github.com/LesFerch/RunHidden/releases/download/1.1.0/RunHidden.zip)
 
-## Run PowerShell scripts and Batch files completely hidden
+## Run scripts and apps with no console window displayed
 
-RunHidden launches any PowerShell script (PS1 extension) or any Batch file (Cmd and Bat extensions) with the console window 100% suppressed.
+RunHidden launches (almost) any script or console application with the console window 100% suppressed.
 
-Obviously, this is meant for scripts that do not produce any console output or take any console input.
+It runs PowerShell scripts (ps1 extension), batch files (cmd and bat extensions), and Python scripts (py extension) directly via their respective interpreter (PowerShell.exe, Cmd.exe, and Python.exe). Those interpreters are assumed to be on the path.
+
+All other script types are run via Cmd.exe (which will usually run the correct interpreter automatically). This approach may not work for everything. If you have a script type that you would like handled directly by its interpreter, please open an issue and I'll try to add it.
+
+Obviously, this is meant for scripts and exes that do not require any console input and do something more than just produce some console output.
 
 RunHidden passes through all command line arguments and is compatible with paths and arguments containing spaces. For PowerShell script arguments, it's not necessary to double up trailing, quoted backslashes, but it's okay to do that. For example, all of the following will work correctly:
 
