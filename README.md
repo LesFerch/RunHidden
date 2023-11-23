@@ -31,10 +31,6 @@ RunHidden.exe is more convenienent than equivalent VBScript or JScript solutions
 
 **Note**: Some antivirus software may falsely detect the download as a virus. This can happen anytime you download a new executable and may require extra steps to whitelist the file.
 
-# Summary
-
-**RunHidden** launches any PowerShell script or batch file with no console window.
-
 ## Usage examples
 
 **Example 1**:\
