@@ -47,14 +47,20 @@ namespace RunHidden
                 psi.FileName = "powershell.exe";
                 psi.Arguments = $"-NoProfile -ExecutionPolicy Bypass -File \"{scriptPath}\" {cmdArgs}";
             }
-            else if (extension.Equals(".cmd") || extension.Equals(".bat"))
+            else if (extension.Equals(".py"))
             {
-                psi.FileName = "cmd.exe";
-                psi.Arguments = $"/c \"\"{scriptPath}\" {cmdArgs}\"";
+                psi.FileName = "python.exe";
+                psi.Arguments = $" \"{scriptPath}\" {cmdArgs}";
+            }
+            else if (extension.Equals(".exe"))
+            {
+                psi.FileName = scriptPath;
+                psi.Arguments = $" {cmdArgs}";
             }
             else
             {
-                return;
+                psi.FileName = "cmd.exe";
+                psi.Arguments = $"/c \"\"{scriptPath}\" {cmdArgs}\"";
             }
 
             psi.RedirectStandardOutput = false;
