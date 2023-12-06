@@ -20,7 +20,7 @@ RunHidden Script01.ps1 "C:\Some Folder\\\\"
 
 RunHidden.exe is more convenienent than equivalent VBScript or JScript solutions. The main advantage is that it's easier to use with Windows shortcuts.
 
-# How to Download and Run
+## How to Download and Run
 
 1. Download the zip file using the link above.
 2. Extract **RunHidden.exe**.
