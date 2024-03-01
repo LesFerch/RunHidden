@@ -1,6 +1,6 @@
 # RunHidden
 
-[![image](https://user-images.githubusercontent.com/79026235/152910441-59ba653c-5607-4f59-90c0-bc2851bf2688.png)Download the zip file](https://github.com/LesFerch/RunHidden/releases/download/1.1.0/RunHidden.zip)
+[![image](https://user-images.githubusercontent.com/79026235/152910441-59ba653c-5607-4f59-90c0-bc2851bf2688.png)Download the zip file](https://github.com/LesFerch/RunHidden/releases/download/1.1.1/RunHidden.zip)
 
 ## Run scripts and apps with no console window displayed
 

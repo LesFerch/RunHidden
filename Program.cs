@@ -19,10 +19,10 @@ namespace RunHidden
 
             string cmdArgs = Environment.CommandLine;
 
-            //Replace all spaces, within quoted substrings, to asterisks
+            //Replace all spaces, within quoted substrings, to xFF
             cmdArgs = Regex.Replace(cmdArgs, "\"([^\"]*)\"", m =>
             {
-                return "\"" + m.Groups[1].Value.Replace(" ", "*") + "\"";
+                return "\"" + m.Groups[1].Value.Replace(" ", "\u00FF") + "\"";
             });
 
             //Ensure there is only a single space between arguments
@@ -33,7 +33,8 @@ namespace RunHidden
             cmdArgs = "";
             if (parts.Length > 2)
             {
-                cmdArgs = parts[2].Replace("*", " ");
+                //Restore xFF to space
+                cmdArgs = parts[2].Replace("\u00FF", " ");
             }
 
             ProcessStartInfo psi = new ProcessStartInfo();
