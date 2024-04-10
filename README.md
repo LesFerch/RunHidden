@@ -1,6 +1,6 @@
 # RunHidden
 
-[![image](https://user-images.githubusercontent.com/79026235/152910441-59ba653c-5607-4f59-90c0-bc2851bf2688.png)Download the zip file](https://github.com/LesFerch/RunHidden/releases/download/1.1.1/RunHidden.zip)
+[![image](https://github.com/LesFerch/WinSetView/assets/79026235/0188480f-ca53-45d5-b9ff-daafff32869e)Download the zip file](https://github.com/LesFerch/RunHidden/releases/download/1.1.1/RunHidden.zip)
 
 ## Run scripts and apps with no console window displayed
 
@@ -29,7 +29,7 @@ RunHidden.exe is more convenienent than equivalent VBScript or JScript solutions
 5. Move **RunHidden.exe** to the folder of your choice. For greatest convenience, place it in a folder that's on the search path.
 6. Typically, you would make a shortcut to **RunHidden.exe** and edit the command line to add the path of the script you want to launch and any arguments you want to pass to that script.
 
-**Note**: Some antivirus software may falsely detect the download as a virus. This can happen anytime you download a new executable and may require extra steps to whitelist the file.
+**Note**: Some antivirus software may falsely detect the download as a virus. This can happen any time you download a new executable and may require extra steps to whitelist the file.
 
 ## Usage examples
 
@@ -59,4 +59,4 @@ Debugging can be tricky when you hide the console, but you can easily determine 
 
 \
 \
-[![image](https://user-images.githubusercontent.com/79026235/153264696-8ec747dd-37ec-4fc1-89a1-3d6ea3259a95.png)](https://github.com/LesFerch/RunHidden)
+[![image](https://github.com/LesFerch/WinSetView/assets/79026235/63b7acbc-36ef-4578-b96a-d0b7ea0cba3a)](https://github.com/LesFerch/RunHidden)
