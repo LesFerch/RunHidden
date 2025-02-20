@@ -53,6 +53,12 @@ Pass one argument that contains a space:\
 Pass two arguments that contain spaces:\
 `RunHidden "C:\My Scripts\Script01.ps1" "C:\Some Folder1\" "C:\Some Folder2\"`
 
+**Example 6**:\
+Run a script hidden using PowerShell Core (pwsh.exe):\
+`RunHidden "*C:\My Scripts\Script01.ps1"`
+
+**Note**: An asterix placed anywhere in the script path will cause RunHidden to use PowerShell Core.
+
 ## Testing Tip
 
 Debugging can be tricky when you hide the console, but you can easily determine if your script is receiving the correct arguments from the command line, by calling this little [messagebox](https://github.com/cubiclesoft/messagebox-windows/tree/master) program from your script.
