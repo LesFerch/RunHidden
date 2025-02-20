@@ -13,6 +13,9 @@ namespace RunHidden
 
             string scriptPath = args[0];
 
+            bool pwsh = scriptPath.Contains("*");
+            scriptPath = scriptPath.Replace("*", "");
+
             if (!File.Exists(scriptPath)) { return; }
 
             string extension = Path.GetExtension(scriptPath).ToLower();
@@ -46,6 +49,7 @@ namespace RunHidden
                 cmdArgs = cmdArgs.Replace("\\\\\\\"", "\\\\\"");
 
                 psi.FileName = "powershell.exe";
+                if (pwsh) psi.FileName = "pwsh.exe";
                 psi.Arguments = $"-NoProfile -ExecutionPolicy Bypass -File \"{scriptPath}\" {cmdArgs}";
             }
             else if (extension.Equals(".py"))
