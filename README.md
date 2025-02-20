@@ -57,7 +57,7 @@ Pass two arguments that contain spaces:\
 Run a script hidden using PowerShell Core (pwsh.exe):\
 `RunHidden "*C:\My Scripts\Script01.ps1"`
 
-**Note**: An asterisk placed anywhere in the script path will cause RunHidden to use PowerShell Core.
+**Note**: A `*` placed anywhere in the script path will cause RunHidden to use PowerShell Core.
 
 ## Testing Tip
 
