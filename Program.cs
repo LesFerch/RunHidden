@@ -7,16 +7,21 @@ namespace RunHidden
 {
     class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
-            if (args.Length < 1) { return; }
+            if (args.Length < 1) {
+                Debug.WriteLine("error: no arguments given, return code: 1");
+                return 1; 
+            }
 
             string scriptPath = args[0];
+
+            Debug.WriteLine($"Script Path: {scriptPath}");
 
             bool pwsh = scriptPath.Contains("*");
             scriptPath = scriptPath.Replace("*", "");
 
-            if (!File.Exists(scriptPath)) { return; }
+            if (!File.Exists(scriptPath)) { return 1; }
 
             string extension = Path.GetExtension(scriptPath).ToLower();
 
@@ -75,8 +80,14 @@ namespace RunHidden
 
             using (Process process = new Process())
             {
+                Debug.WriteLine("Starting {0} {1}", psi.FileName, psi.Arguments);
+
                 process.StartInfo = psi;
                 process.Start();
+                process.WaitForExit();
+
+                Debug.WriteLine("{0} exited with code {1}", psi.FileName, process.ExitCode);
+                return process.ExitCode;
             }
         }
     }
