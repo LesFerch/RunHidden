@@ -65,4 +65,6 @@ Run a script hidden using PowerShell Core (pwsh.exe):\
 
 Use [DebugView](https://learn.microsoft.com/en-us/sysinternals/downloads/debugview) to view what is being launched and any errors that occur.
 \
+\
+\
 [![image](https://github.com/LesFerch/WinSetView/assets/79026235/63b7acbc-36ef-4578-b96a-d0b7ea0cba3a)](https://github.com/LesFerch/RunHidden)
