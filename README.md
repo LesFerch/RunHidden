@@ -29,6 +29,8 @@ RunHidden.exe is more convenienent than equivalent VBScript or JScript solutions
 5. Move **RunHidden.exe** to the folder of your choice. For greatest convenience, place it in a folder that's on the search path.
 6. Typically, you would make a shortcut to **RunHidden.exe** and edit the command line to add the path of the script you want to launch and any arguments you want to pass to that script.
 
+**Note**: The package now also includes **RunHiddenWait.exe** which can be used when you want to wait for the called script to complete and get its exit code.
+
 **Note**: Some antivirus software may falsely detect the download as a virus. This can happen any time you download a new executable and may require extra steps to whitelist the file.
 
 ## Usage examples
@@ -61,8 +63,6 @@ Run a script hidden using PowerShell Core (pwsh.exe):\
 
 ## Testing Tip
 
-Debugging can be tricky when you hide the console, but you can easily determine if your script is receiving the correct arguments from the command line, by calling this little [messagebox](https://github.com/cubiclesoft/messagebox-windows/tree/master) program from your script.
-
-\
+Use [DebugView](https://learn.microsoft.com/en-us/sysinternals/downloads/debugview) to view what is being launched and any errors that occur.
 \
 [![image](https://github.com/LesFerch/WinSetView/assets/79026235/63b7acbc-36ef-4578-b96a-d0b7ea0cba3a)](https://github.com/LesFerch/RunHidden)
